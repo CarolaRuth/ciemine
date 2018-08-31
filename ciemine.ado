@@ -7,7 +7,7 @@ version 7.0
 	syntax anything
 	quietly {
 	clear *
-	do D:/documentos/cies/Proyectos/Datos/BIcase/data/_do/`anything'.do
+	do https://github.com/CarolaRuth/ciemine/`anything'.do
 	}
 end
 exit
