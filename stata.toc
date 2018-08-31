@@ -1,0 +1,7 @@
+***************************************************stata.toc
+v 1
+d CIEMINE permite obtener bases de datos armonizadas en diferentes temáticas disponibles en el INE.
+d Carola Ruth Tito Velarde
+
+p ciemine Permite la obtener las bases de datos. 
+***************************************************stata.toc

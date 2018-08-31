@@ -1,0 +1,11 @@
+***************************************************ciemine.pkg
+v 1
+d ciemine. Paquete que permite obtener bases armonizadas del INE.
+d Carola Ruth Tito Velarde
+
+f ciemine.ado
+f ciemine.sthlp
+f gr_ipc.ado
+F serieipc.do
+F serieipc.xls
+***************************************************ciemine.pkg
