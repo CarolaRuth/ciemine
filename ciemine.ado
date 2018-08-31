@@ -10,4 +10,4 @@ version 7.0
 	do https://raw.githubusercontent.com/CarolaRuth/ciemine/master/`anything'.do
 	}
 end
-exit
+
