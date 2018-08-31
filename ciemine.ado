@@ -7,7 +7,7 @@ version 7.0
 	syntax anything
 	quietly {
 	clear *
-	do https://raw.githubusercontent.com/CarolaRuth/ciemine/master/`anything'.do
+	do "https://raw.githubusercontent.com/CarolaRuth/ciemine/master/`anything'.do"
 	}
 end
 
