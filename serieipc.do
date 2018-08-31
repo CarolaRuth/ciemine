@@ -3,8 +3,8 @@ clear all
 * Base de datos: Índice de Precios al Consumidor HISTÓRICO
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
-global in "D:\documentos\cies\Proyectos\Datos\BIcase\bd\xlsx"
-import excel using "$in\serieipc.xls", firstrow sheet(data)
+*global in "D:\documentos\cies\Proyectos\Datos\BIcase\bd\xlsx"
+import excel using "https://github.com/CarolaRuth/ciemine/serieipc.xls", firstrow sheet(data)
 
 reshape long a, i(MES) j(t)
 format a %12.8fc
