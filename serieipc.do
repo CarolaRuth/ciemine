@@ -102,3 +102,11 @@ format varipc_ac %12.2fc
 /***GRÁFICO DE TRAYECTORIA ACUMULADA
 tsline varipc_ac, scheme(burd10)
 */
+
+label var mes 			"Mes"
+label var año			"Año"
+label var ipc			"Indice de Precios al Consumidor Base=2016"
+label var t				"Variable año/mes"
+label var varipc		"Variación mensual del IPC"
+label var varipc12		"Variación a 12 meses del IPC"
+label var varipc_ac 	"Variación acumulada del IPC"
