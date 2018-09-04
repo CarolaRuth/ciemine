@@ -10,6 +10,9 @@ Bolivia armonizadas y sistematizadas para uso del CIEMCorp.
 		{phang}{cmd:Las bases disponibles son:}{p_end}
 		
 		{pmore}
+		{hline 1} [serieipc] Índice de Precios al Consumidor (IPC) serie histórica mensual de 1937 al 2018. 
+
+		{pmore}
 		{hline 1} [ipcclase] Precio promedio por clase de todas las ciudades (tipo de producto de la canasta familiar) mensual de 2008 al 2017. 
 
 		{pmore}
