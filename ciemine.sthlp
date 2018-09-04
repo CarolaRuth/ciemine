@@ -10,10 +10,10 @@ Bolivia armonizadas y sistematizadas para uso del CIEMCorp.
 		{phang}{cmd:Las bases disponibles son:}{p_end}
 		
 		{pmore}
-		{hline 1} [serieipc] Índice de Precios al Consumidor (IPC) serie histórica mensual de 1937 al 2018. 
-		
+		{hline 1} [ipcclase] Precio promedio por clase de todas las ciudades (tipo de producto de la canasta familiar) mensual de 2008 al 2017. 
+
 		{pmore}
-		{hline 1} [ipcclase_{ciudad}] Precio promedio por clase (tipo de producto de la canasta familiar) mensual de 2008 al 2017. 
+		{hline 1} [ipcclase_{ciudad}] Precio promedio por clase y ciudad (tipo de producto de la canasta familiar) mensual de 2008 al 2017. 
 		
 {title:Syntax}
 
@@ -55,6 +55,13 @@ Para más información de los indicadores de la base de serieipc, ver {browse "h
 	{cmd: size(small) color(dknavy))}
   {it:({stata gr_ipc tslineipc_ac:click to run})}
 {* graph tslineipc_ac}{...}
+
+{phang}
+{it: Figura 3} Gráfico de precio promedio de productos 2008-2017 en bolivianos. Para el caso de alimentos de la ciudad de Cochabamba. 
+
+  {cmd:. El gráfico se realiza en base a selección de productos con mayor volatilidad.} 
+  {it:({stata gr_ipc pp_al_cbba:click to run})}
+{* graph pp_al_cbba}{...}
 
 {title:Author}
 
