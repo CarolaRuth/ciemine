@@ -12,7 +12,7 @@ F ipcclase_sucre.do
 F ipcclase_lapaz.do
 F ipcclase_cbba.do
 F serieipc.xls
-f _xlsx/PreciosPromedio_SUCRE.xls
-f _xlsx/PreciosPromedio_COCHABAMBA.xls
-f _xlsx/PreciosPromedio_LAPAZ.xls
+f PreciosPromedio_SUCRE.xls
+f PreciosPromedio_COCHABAMBA.xls
+f PreciosPromedio_LAPAZ.xls
 ***************************************************ciemine.pkg
