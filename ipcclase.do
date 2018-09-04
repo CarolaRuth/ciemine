@@ -3,13 +3,13 @@ set more off
 * Base de datos: Índice de Precios al Consumidor S/ CLASE
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
-global in 	"D:\documentos\cies\Proyectos\Datos\BIcase\bd\xlsx"
-global dta	"D:\documentos\cies\Proyectos\Datos\BIcase\bd\_dta"
+global in 	"https://raw.githubusercontent.com/CarolaRuth/ciemine/master/xlsx"
+global dta	"https://raw.githubusercontent.com/CarolaRuth/ciemine/master/_dta"
 
 local deptos "SUCRE LAPAZ COCHABAMBA"
 foreach d of local deptos{
 forvalues i=2008(1)2017{
-import excel using "$in\PreciosPromedio_`d'_`i'.xls", firstrow sheet(data) clear
+import excel using "$in/PreciosPromedio_`d'_`i'.xls", firstrow sheet(data) clear
 renvars, lower
 rename descripcion descripcion`i'
 
@@ -106,7 +106,7 @@ label define depto
 #delimit cr
 lab values depto depto
 
-saveold "$dta\pp`d'`i'", replace version(12)
+saveold "$dta/pp`d'`i'", replace version(12)
 }
 }
 
@@ -124,7 +124,7 @@ format variedad %12.0g
 local deptos "SUCRE LAPAZ COCHABAMBA"
 foreach d of local deptos{
 forvalues i=2008(1)2017{
-use "$dta\pp`d'`i'.dta", clear
+use "$dta/pp`d'`i'.dta", clear
 
 cap drop idclase
 gen str12 idclase=variedad
@@ -517,7 +517,7 @@ lab values idclase clase
 cap drop año
 gen año=`i'
  
-save "$dta\pp`d'`i'.dta", replace
+save "$dta/pp`d'`i'.dta", replace
 }
 }
 
@@ -526,7 +526,7 @@ clear
 local deptos "SUCRE LAPAZ COCHABAMBA"
 foreach d of local deptos{
 forvalues j=2008(1)2017{
-use "$dta\pp`d'`j'.dta", clear
+use "$dta/pp`d'`j'.dta", clear
 
 local i=1
 foreach var of varlist enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre{
@@ -537,12 +537,12 @@ local i=`i'+1
 
 reshape long a, i(idclase) j(mes)
 
-save "$dta\spp`d'`j'.dta", replace
+save "$dta/spp`d'`j'.dta", replace
 }
 
-use "$dta\spp`d'2008.dta", clear
+use "$dta/spp`d'2008.dta", clear
 forvalues i=2009(1)2017{
-append using "$dta\spp`d'`i'.dta"
+append using "$dta/spp`d'`i'.dta"
 }
 
 cap drop capitulo
@@ -567,20 +567,20 @@ label var variedad		"Id bruto"
 label var t 			"Variable año/mes"
 order t idclase iddivision depto precio cantidad umedida año mes
 
-save  "$dta\spp`d'.dta", replace
+save  "$dta/spp`d'.dta", replace
 }
 
-use "$dta\sppSUCRE.dta", clear
+use "$dta/sppSUCRE.dta", clear
 local deptos "LAPAZ COCHABAMBA"
 foreach d of local deptos{
 append using "$dta\spp`d'.dta"
 }
-*save "$dta\sppBOLIVIA.dta", replace
+*save "$dta/sppBOLIVIA.dta", replace
 
 local deptos "SUCRE LAPAZ COCHABAMBA"
 foreach d of local deptos{
 forvalues i=2008(1)2017{
-erase "$dta\spp`d'`i'.dta"
-erase "$dta\pp`d'`i'.dta"
+erase "$dta/spp`d'`i'.dta"
+erase "$dta/pp`d'`i'.dta"
 }
 }
