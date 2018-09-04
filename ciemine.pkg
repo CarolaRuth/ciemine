@@ -8,4 +8,7 @@ f ciemine.sthlp
 f gr_ipc.ado
 F serieipc.do
 F serieipc.xls
+f PreciosPromedio_SUCRE.xls
+f PreciosPromedio_COCHABAMBA.xls
+f PreciosPromedio_LAPAZ.xls
 ***************************************************ciemine.pkg
