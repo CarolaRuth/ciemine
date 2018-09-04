@@ -9,7 +9,7 @@ global dta	"https://raw.githubusercontent.com/CarolaRuth/ciemine/master/_dta"
 local deptos "SUCRE LAPAZ COCHABAMBA"
 foreach d of local deptos{
 forvalues i=2008(1)2017{
-import excel using "$in/PreciosPromedio_`d'_`i'.xls", firstrow sheet(data) clear
+import excel using "$in/PreciosPromedio_`d'.xls", firstrow sheet(`i') clear
 renvars, lower
 rename descripcion descripcion`i'
 
