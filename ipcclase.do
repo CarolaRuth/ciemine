@@ -3,7 +3,7 @@ set more off
 * Base de datos: Índice de Precios al Consumidor S/ CLASE
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
-global in 	"https://raw.githubusercontent.com/CarolaRuth/ciemine/master/xlsx"
+global in 	"https://raw.githubusercontent.com/CarolaRuth/ciemine/master"
 global dta	"https://raw.githubusercontent.com/CarolaRuth/ciemine/master/_dta"
 
 local deptos "SUCRE LAPAZ COCHABAMBA"
