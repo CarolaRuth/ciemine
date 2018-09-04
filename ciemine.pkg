@@ -7,8 +7,11 @@ f ciemine.ado
 f ciemine.sthlp
 f gr_ipc.ado
 F serieipc.do
-F serieipc.xls
 F ipcclase.do
+F ipcclase_sucre.do
+F ipcclase_lapaz.do
+F ipcclase_cbba.do
+F serieipc.xls
 f _xlsx/PreciosPromedio_SUCRE.xls
 f _xlsx/PreciosPromedio_COCHABAMBA.xls
 f _xlsx/PreciosPromedio_LAPAZ.xls
