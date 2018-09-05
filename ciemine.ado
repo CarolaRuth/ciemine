@@ -4,7 +4,7 @@ program define ciemine
 	syntax anything
 	quietly {
 	clear *
-	do D:/documentos/cies/Proyectos/Datos/BIcase/data/_do/`anything'.do
+	do "https://raw.githubusercontent.com/CarolaRuth/ciemine/master/`anything'.do"
 	}
 end
 
