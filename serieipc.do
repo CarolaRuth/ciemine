@@ -1,4 +1,4 @@
-clear all
+
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Base de datos: Índice de Precios al Consumidor HISTÓRICO
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
