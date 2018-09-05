@@ -1,7 +1,5 @@
-**PROYECTO DE SISTEMATIZACIÓN DE BASE DE DATOS
-**Autora: CAROLA TITO VELARDE
-**Versión 0
-capture program drop ciemine
+*! Version 1.0
+* capture program drop ciemine
 program define ciemine
 version 8.0
 	syntax anything
