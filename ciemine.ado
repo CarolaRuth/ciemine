@@ -3,7 +3,7 @@
 **Versión 0
 capture program drop ciemine
 program define ciemine
-version 7.0
+version 8.0
 	syntax anything
 	quietly {
 	clear *
